@@ -21,13 +21,8 @@ const btns = document.querySelectorAll(".wrap button")
 console.dir(btns)
 
 for (let btn of btns) {
-    btn.addEventListener("click", function () {
+    btn.addEventListener("click", function (e) {
+        e.target.style.backgroundColor = "red"
 
-        console.log(this.textContent)
     })
 }
-// for (let btn of btns) {
-//     btn.addEventListener("click", fucntion(){
-//         console.log("Clicked");
-//     })
-// }
